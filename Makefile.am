@@ -19,18 +19,18 @@
 #  TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 #  PERFORMANCE OF THIS SOFTWARE.
 
-bin_PROGRAMS = xeyes
+bin_PROGRAMS = 4eyes
 
 AM_CFLAGS = $(XEYES_CFLAGS) $(XRENDER_CFLAGS) $(CWARNFLAGS)
-xeyes_LDADD = $(XEYES_LIBS) $(XRENDER_LIBS) -lm
+4eyes_LDADD = $(XEYES_LIBS) $(XRENDER_LIBS) -lm
 
-xeyes_SOURCES =	\
+4eyes_SOURCES =	\
         Eyes.c \
         Eyes.h \
         EyesP.h \
         transform.c \
         transform.h \
-        xeyes.c
+        4eyes.c
 
 appman_PRE = \
         xeyes.man

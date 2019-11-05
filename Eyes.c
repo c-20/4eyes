@@ -571,7 +571,7 @@ static void Resize (Widget gw)
 //	    	x += parent->core.y + parent->core.border_width;
 	    	y += parent->core.y + parent->core.border_width;
 	    }
-printf("OFFSET: %d %d\n", x, y);
+//printf("OFFSET: %d %d\n", x, y);
     	    XShapeCombineMask (XtDisplay (parent), XtWindow (parent), ShapeBounding,
 		       	       x, y, w->eyes.shape_mask, ShapeSet);
 	    XFreePixmap (dpy, w->eyes.shape_mask);
